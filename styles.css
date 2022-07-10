@@ -26,11 +26,11 @@ body, html {
 
 /* Global */
 h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 a {
@@ -40,41 +40,43 @@ a {
 /* Header */
 header {
     width: 100%;
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 15vh;
     background-color: white;
     color: rgb(44, 136, 197);
-    padding: 2rem 4rem;
     position: fixed;
     z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
     display: flex;
     align-items: center;
-    gap: 1.2rem
+    gap: 0.8rem;
+    padding: 0.5rem;
 }
 
 .navbar {
-    display: flex;
-    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
 }
 
 .navbar__icons {
-    display: flex;
-    margin-right: 3rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, auto);
+    gap: 1.5rem;
 }
 
 nav li {
     list-style: none;
-    padding-left: 2rem;
 }
 
 .navbar__icon {
     color: rgb(44, 136, 197);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: border-bottom 0.3s ease-in-out;
 }
 
@@ -83,6 +85,7 @@ nav li {
 }
 
 .main-btn {
+    display: none; /* No button on mobile */
     padding: 0.7rem;
     font-size: 1.5rem;
     border: none;
@@ -96,21 +99,21 @@ nav li {
 /* Hero */
 #hero {
     width: 100%;
-    height: 90.5vh;
-    padding: 4rem;
+    min-height: 90.5vh;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     background-image: url("./Assets/purple\ sky\ plane.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: bottom 60% right 0;
     position: relative;
-    top: 10vh;
+    top: 15vh;
 }
 
 .hero-text {
     position: relative;
-    padding: 3rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,14 +125,15 @@ nav li {
 }
 
 .hero-text-title {
-    width: 32rem;
-    padding: 4rem;
+    width: 80%;
+    padding: 1rem;
     border: 3px solid white;
     text-transform: uppercase;
 }
 
 .hero-text-p {
-    width: 40rem;
+    margin-top: 2.5rem;
+    width: 100%;
 }
 
 /* About */
