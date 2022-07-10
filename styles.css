@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    animation: fade-in-page-load 0.3s;
+}
+
+/* Fade-in on page load */
+@keyframes fade-in-page-load {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Global */
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: rgb(44, 136, 197);
+    padding: 2rem 4rem;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__icons {
+    display: flex;
+    margin-right: 3rem;
+}
+
+nav li {
+    list-style: none;
+    padding-left: 2rem;
+}
+
+.navbar__icon {
+    color: rgb(44, 136, 197);
+    font-size: 1.5rem;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.navbar__icon:hover {
+    border-bottom: 7px solid rgb(44, 136, 197);
+}
+
+.main-btn {
+    padding: 0.7rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(to left,rgb(46, 194, 137), rgb(35, 112, 163));
+    color: white;
+    cursor: pointer;
+}
+
+
+/* Hero */
+#hero {
+    width: 100%;
+    height: 90.5vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    background-image: url("./Assets/purple\ sky\ plane.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom 60% right 0;
+    position: relative;
+    top: 10vh;
+}
+
+.hero-text {
+    position: relative;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.hero-text-title {
+    width: 32rem;
+    padding: 4rem;
+    border: 3px solid white;
+    text-transform: uppercase;
+}
+
+.hero-text-p {
+    width: 40rem;
+}
+
+/* About */
+#about {
+    height: 100vh;
+    background-image: url("./Assets/Greece.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contact */
+#contact {
+    height: 100vh;
+    background-image: url("./Assets/contact-baclground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Footer */
+footer {
+    height: 20vh;
+    padding: 2rem;
+    background-color: rgb(11, 37, 58);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Articles */
+#articles {
+    width: 100%;
+    height: 200vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    background-image: url("./Assets/purple\ sea.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: fixed;
+    position: relative;
+    top: 10vh;
+}
+
+.articles-grid {
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.blog-article {
+    width: 85%;
+    height: 90%;
+    background-color: white;
+    opacity: 0.6;
+}
+
+/* Join */
+#join {
+    width: 100%;
+    height: 150vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    background-image: url("./Assets/night-street.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom 60% right 0;
+    position: relative;
+    top: 10vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(180deg, rgb(84, 133, 161), rgb(7, 114, 55));
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, rgb(45, 61, 70), rgb(11, 83, 42));
+    border: .1em solid rgba(225, 184, 252, 0.486);
+    border-radius: 50vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(180deg, rgb(13, 27, 27), rgb(8, 51, 26));
+}
